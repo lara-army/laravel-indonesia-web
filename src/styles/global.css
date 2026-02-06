@@ -20,4 +20,21 @@
   --font-sans: "Instrument Sans Variable", sans-serif;
 
   --color-laravel: #f53103;
+  --color-border: var(--color-zinc-100);
+}
+
+@layer components {
+  .inner {
+    @apply mx-auto w-9/10 max-w-272;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
 }
