@@ -2,10 +2,14 @@
 import Layout from "../layouts/app.astro";
 import logo from "../assets/logo.svg";
 import IconArrowUpRight from "~icons/tabler/arrow-up-right";
+import IconBrandGithub from "~icons/tabler/brand-github";
+import IconBrandX from "~icons/tabler/brand-x";
 ---
 
 <Layout>
-  <header class="fixed z-50 left-1/2 -translate-x-1/2 top-4">
+  <header
+    class="fixed z-50 left-1/2 bg-white/90 backdrop-blur-sm -translate-x-1/2 top-4"
+  >
     <div
       class="h-16 gap-12 relative border border-zinc-300 flex items-center pl-2 pr-6"
     >
@@ -29,9 +33,11 @@ import IconArrowUpRight from "~icons/tabler/arrow-up-right";
         <img class="size-10" src={logo.src} /> Laravel Indonesia
       </a>
       <div class="flex items-center gap-1">
-        <a class="hover:underline text-sm text-zinc-700" href="/">Events</a>
+        <a class="hover:underline text-sm text-zinc-700" href="#acara">Acara</a>
         <span>・</span>
-        <a class="hover:underline text-sm text-zinc-700" href="/">Team</a>
+        <a class="hover:underline text-sm text-zinc-700" href="#pengurus"
+          >Pengurus</a
+        >
         <span>・</span>
         <a
           class="hover:underline text-sm inline-flex gap-1 text-zinc-700"
@@ -304,6 +310,272 @@ import IconArrowUpRight from "~icons/tabler/arrow-up-right";
       </div>
     </div>
   </main>
+  <section class="border-y flex border-zinc-800 relative">
+    <div class="border-b border-zinc-800 h-16">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+    <div class="inner border-x border-zinc-800 p-12">
+      <h2 class="text-3xl">
+        Laravel Indonesia menghubungkan para pengembang dari berbagai tingkat
+        pengalaman—dari yang baru mengenal <em>framework</em> ini hingga yang telah
+        membangun sistem berskala besar. Di sini, diskusi teknis mendalam berpadu
+        dengan suasana yang memungkinkan setiap anggota untuk bertanya, berbagi solusi,
+        dan mengembangkan kariir bersama.
+      </h2>
+    </div>
+    <div class="border-b border-zinc-800 h-16">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
+  <section class="border-y flex border-zinc-800 relative" id="acara">
+    <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <div class="pl-12 pt-12 relative">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-xl whitespace-nowrap font-medium border bg-white border-zinc-800 px-4 py-2"
+          >
+            Jadwal Kegiatan
+          </h2>
+          <div class="h-px w-full bg-zinc-800"></div>
+        </div>
+      </div>
+      <div
+        class="border-x border-t border-zinc-800 p-8 flex flex-col relative mx-12 bg-white"
+      >
+        <h3 class="text-2xl font-medium">Saat ini belum ada kegiatan</h3>
+        <p class="mt-2 mb-6 text-lg text-zinc-600">
+          Kami sedang menyiapkan agenda berikutnya. Gabung komunitas untuk
+          mendapat update jadwal terbaru.
+        </p>
+        <button
+          class="h-12 hover:bg-laravel border border-laravel text-laravel transition-all hover:text-white text-left text-lg pl-6 pr-4 inline-flex items-center justify-between"
+        >
+          Gabung Komunitas
+          <IconArrowUpRight />
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
+  <section class="border-y flex border-zinc-800 relative" id="acara">
+    <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <div class="pl-12 pt-12 relative">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-xl whitespace-nowrap font-medium border bg-white border-zinc-800 px-4 py-2"
+          >
+            Para Pengurus
+          </h2>
+          <div class="h-px w-full bg-zinc-800"></div>
+        </div>
+      </div>
+      <div class="mx-12 flex gap-4">
+        <div
+          class="border-x w-80 shrink-0 border-t p-6 border-zinc-800 flex flex-col relative bg-white"
+        >
+          Tim di balik layar yang mengalokasikan waktu dan keahlian secara
+          sukarela. Atas setiap jam yang dicurahkan untuk menyusun agenda,
+          menjawab pertanyaan, dan menjaga kualitas interaksi, kami ucapkan
+          terima kasih.
+        </div>
+        <div
+          class="border-x w-full border-t border-zinc-800 flex flex-col relative bg-white"
+        >
+          <div class="flex flex-col divide-y divide-zinc-800">
+            <div class="flex items-center gap-2 last:border-b border-zinc-800">
+              <img
+                class="size-14 border-r border-zinc-800"
+                src="https://github.com/dominosaurs.png"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="text-lg font-semibold">Adam Akbar</span>
+                <span class="text-sm">Inisiator</span>
+              </div>
+              <div class="flex gap-2 ml-auto pr-4">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <IconBrandGithub />
+                </a>
+                <a href="https://x.com/dominosaurs" target="_blank">
+                  <IconBrandX />
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 last:border-b border-zinc-800">
+              <img
+                class="size-14 border-r border-zinc-800"
+                src="https://github.com/kimmyxpow.png"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="text-lg font-semibold">pow</span>
+                <span class="text-sm">Insinyur Desainer</span>
+              </div>
+              <div class="flex gap-2 ml-auto pr-4">
+                <a
+                  href="http://github.com/kimmyxpow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconBrandGithub />
+                </a>
+                <a href="https://x.com/kimmyxpow" target="_blank">
+                  <IconBrandX />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
 </Layout>
 
 <style>
