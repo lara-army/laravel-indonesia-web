@@ -1,0 +1,668 @@
+---
+import Layout from "../layouts/app.astro";
+import logo from "../assets/logo.svg";
+import IconArrowUpRight from "~icons/tabler/arrow-up-right";
+import IconBrandGithub from "~icons/tabler/brand-github";
+import IconBrandX from "~icons/tabler/brand-x";
+---
+
+<script>
+  import fitty from "fitty";
+
+  fitty("#laravel-text");
+</script>
+
+<Layout>
+  <header
+    class="fixed z-50 left-1/2 bg-white/90 backdrop-blur-sm -translate-x-1/2 top-4"
+  >
+    <div
+      class="h-16 gap-12 relative border border-zinc-300 flex items-center pl-2 pr-6"
+    >
+      <div
+        class="absolute border-l border-t h-[30%] aspect-square transition-all -left-px -top-px group-hover:-left-1 group-hover:-top-1 border-zinc-800"
+      >
+      </div>
+      <div
+        class="absolute border-r border-t h-[30%] aspect-square transition-all -right-px -top-px group-hover:-right-1 group-hover:-top-1 border-zinc-800"
+      >
+      </div>
+      <div
+        class="absolute border-l border-b h-[30%] aspect-square transition-all -left-px -bottom-px group-hover:-left-1 group-hover:-bottom-1 border-zinc-800"
+      >
+      </div>
+      <div
+        class="absolute border-r border-b h-[30%] aspect-square transition-all -right-px -bottom-px group-hover:-right-1 group-hover:-bottom-1 border-zinc-800"
+      >
+      </div>
+      <a href="/" class="flex items-center text-lg font-semibold">
+        <img class="size-10" src={logo.src} /> Laravel Indonesia
+      </a>
+      <div class="flex items-center gap-1">
+        <a class="hover:underline text-sm text-zinc-700" href="#acara">Acara</a>
+        <span>・</span>
+        <a class="hover:underline text-sm text-zinc-700" href="#pengurus"
+          >Pengurus</a
+        >
+        <span>・</span>
+        <a
+          class="hover:underline text-sm inline-flex gap-1 text-zinc-700"
+          href="/"
+        >
+          Discord
+          <IconArrowUpRight />
+        </a>
+        <span>・</span>
+        <a
+          class="hover:underline text-sm inline-flex gap-1 text-zinc-700"
+          href="/"
+        >
+          Github
+          <IconArrowUpRight />
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="flex items-center justify-center relative">
+    <div class="absolute z-10 left-0 top-0 bottom-0 w-16 overflow-hidden">
+      <div class="scroll-up flex flex-col -space-y-px">
+        {
+          Array.from({ length: 20 }).map(() => (
+            <>
+              <div class="size-16 border border-zinc-800 shrink-0">
+                <div class="w-full h-1/2 border-b border-zinc-800 bg-red-500" />
+                <div class="w-full h-1/2 bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/2 h-full border-r border-zinc-800 bg-red-500" />
+                <div class="w-1/2 h-full bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0">
+                <div class="w-full h-1/2 border-b border-zinc-800 bg-white" />
+                <div class="w-full h-1/2 bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/2 h-full border-r border-zinc-800 bg-white" />
+                <div class="w-1/2 h-full bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 grid grid-cols-2 grid-rows-2">
+                <div class="border-r border-b border-zinc-800 bg-red-500" />
+                <div class=" bg-white" />
+                <div class="bg-white" />
+                <div class="border-l border-t border-zinc-800 bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 grid grid-cols-2 grid-rows-2">
+                <div class="border-r border-b border-zinc-800 bg-white" />
+                <div class="bg-red-500" />
+                <div class="bg-red-500" />
+                <div class="border-l border-t border-zinc-800 bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex flex-col">
+                <div class="h-1/3 w-full bg-red-500" />
+                <div class="h-1/3 w-full bg-white border-x border-zinc-800" />
+                <div class="h-1/3 w-full bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/3 h-full bg-white" />
+                <div class="w-1/3 h-full bg-red-500 border-x border-zinc-800" />
+                <div class="w-1/3 h-full bg-white" />
+              </div>
+            </>
+          ))
+        }
+      </div>
+    </div>
+    <div
+      class="inner relative min-h-screen border-x border-dashed border-zinc-800 flex flex-col items-center justify-center"
+    >
+      <div
+        class="absolute left-0 -translate-x-full border-l border-dashed border-zinc-800 top-0 bottom-0 w-16"
+      >
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="8"
+              height="8"
+              patternUnits="userSpaceOnUse"
+              id="_r9R_g_"
+              ><line
+                x1="0"
+                y1="10"
+                x2="10"
+                y2="0"
+                stroke="currentColor"
+                vector-effect="non-scaling-stroke"
+                class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+              ></line></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+        </svg>
+      </div>
+      <div
+        class="absolute right-0 translate-x-full border-r border-dashed border-zinc-800 top-0 bottom-0 w-16"
+      >
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="8"
+              height="8"
+              patternUnits="userSpaceOnUse"
+              id="_r9R_g_"
+              ><line
+                x1="0"
+                y1="10"
+                x2="10"
+                y2="0"
+                stroke="currentColor"
+                vector-effect="non-scaling-stroke"
+                class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+              ></line></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect></svg
+        >
+      </div>
+      <div class="relative flex flex-col -space-y-72 translate-y-2">
+        <span
+          class="font-black text-[12rem] select-none leading-[0.8] text-center text-white"
+          style="-webkit-text-stroke:1px var(--color-zinc-500);"
+        >
+          LARAVEL INDONESIA
+        </span>
+        <span
+          class="font-black text-[12rem] select-none leading-[0.8] text-center text-white"
+          style="-webkit-text-stroke:1px var(--color-zinc-500);"
+        >
+          LARAVEL INDONESIA
+        </span>
+        <span
+          class="font-black text-[12rem] select-none leading-[0.8] text-center text-white"
+          style="-webkit-text-stroke:1px var(--color-zinc-500);"
+        >
+          LARAVEL INDONESIA
+        </span>
+        <span
+          class="font-black text-[12rem] select-none leading-[0.8] text-center text-white"
+          style="-webkit-text-stroke:1px var(--color-zinc-500);"
+        >
+          LARAVEL INDONESIA
+        </span>
+        <span
+          class="font-black text-[12rem] select-none leading-[0.8] text-center text-white"
+          style="-webkit-text-stroke:1px var(--color-zinc-500);"
+        >
+          LARAVEL INDONESIA
+        </span>
+        <h1 class="font-black text-[12rem] leading-[0.8] text-center">
+          LARAVEL INDONESIA
+        </h1>
+      </div>
+      <div class="w-full flex flex-col">
+        <div class="border-zinc-900 border-t h-4"></div>
+        <div
+          class="flex justify-between group border-y border-zinc-900 items-center"
+        >
+          <div
+            class="flex justify-center border-r border-zinc-900 items-center h-16 w-40 shrink-0"
+          >
+            <span class="text-lg font-bold">50+ Anggota</span>
+          </div>
+          <div class="w-full relative h-16 flex items-center">
+            <div
+              class="w-full h-px bg-zinc-800 group-has-[button:hover]:bg-laravel"
+            >
+            </div>
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-130 -bottom-1.5 absolute rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-130 -top-1.5 absolute -rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-140 -bottom-1.5 absolute rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-140 -top-1.5 absolute -rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-150 -bottom-1.5 absolute rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+            <div
+              class="w-px h-[70%] bg-zinc-800 right-150 -top-1.5 absolute -rotate-45 group-has-[button:hover]:bg-laravel group-has-[button:hover]:right-4 transition-all"
+            >
+            </div>
+          </div>
+          <div class="px-2 shrink-0">
+            <button
+              class="text-laravel border-laravel/30 bg-linear-to-b from-transparent to-laravel/6 after:content-[''] after:absolute after:inset-0 after:-z-1 transition-all hover:after:bg-laravel after:transition-all hover:text-white h-12 px-6 border relative group/button"
+            >
+              <div
+                class="absolute border-l border-t h-[30%] aspect-square transition-all -left-px -top-px group-hover/button:-left-1 group-hover/button:-top-1 border-laravel"
+              >
+              </div>
+              <div
+                class="absolute border-r border-t h-[30%] aspect-square transition-all -right-px -top-px group-hover/button:-right-1 group-hover/button:-top-1 border-laravel"
+              >
+              </div>
+              <div
+                class="absolute border-l border-b h-[30%] aspect-square transition-all -left-px -bottom-px group-hover/button:-left-1 group-hover/button:-bottom-1 border-laravel"
+              >
+              </div>
+              <div
+                class="absolute border-r border-b h-[30%] aspect-square transition-all -right-px -bottom-px group-hover/button:-right-1 group-hover/button:-bottom-1 border-laravel"
+              >
+              </div>
+              Gabung Discord
+            </button>
+          </div>
+        </div>
+        <div class="border-zinc-900 border-b h-4"></div>
+      </div>
+    </div>
+    <div class="absolute z-10 right-0 top-0 bottom-0 w-16 overflow-hidden">
+      <div class="scroll-down flex flex-col -space-y-px">
+        {
+          Array.from({ length: 20 }).map(() => (
+            <>
+              <div class="size-16 border border-zinc-800 shrink-0">
+                <div class="w-full h-1/2 border-b border-zinc-800 bg-red-500" />
+                <div class="w-full h-1/2 bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/2 h-full border-r border-zinc-800 bg-red-500" />
+                <div class="w-1/2 h-full bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0">
+                <div class="w-full h-1/2 border-b border-zinc-800 bg-white" />
+                <div class="w-full h-1/2 bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/2 h-full border-r border-zinc-800 bg-white" />
+                <div class="w-1/2 h-full bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 grid grid-cols-2 grid-rows-2">
+                <div class="border-r border-b border-zinc-800 bg-red-500" />
+                <div class=" bg-white" />
+                <div class="bg-white" />
+                <div class="border-l border-t border-zinc-800 bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 grid grid-cols-2 grid-rows-2">
+                <div class="border-r border-b border-zinc-800 bg-white" />
+                <div class="bg-red-500" />
+                <div class="bg-red-500" />
+                <div class="border-l border-t border-zinc-800 bg-white" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex flex-col">
+                <div class="h-1/3 w-full bg-red-500" />
+                <div class="h-1/3 w-full bg-white border-x border-zinc-800" />
+                <div class="h-1/3 w-full bg-red-500" />
+              </div>
+              <div class="size-16 border border-zinc-800 shrink-0 flex">
+                <div class="w-1/3 h-full bg-white" />
+                <div class="w-1/3 h-full bg-red-500 border-x border-zinc-800" />
+                <div class="w-1/3 h-full bg-white" />
+              </div>
+            </>
+          ))
+        }
+      </div>
+    </div>
+  </main>
+  <section class="border-y flex border-zinc-800 relative">
+    <div class="border-b border-zinc-800 h-16">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+    <div class="inner border-x border-zinc-800 p-12">
+      <h2 class="text-3xl">
+        Laravel Indonesia menghubungkan para pengembang dari berbagai tingkat
+        pengalaman—dari yang baru mengenal <em>framework</em> ini hingga yang telah
+        membangun sistem berskala besar. Di sini, diskusi teknis mendalam berpadu
+        dengan suasana yang memungkinkan setiap anggota untuk bertanya, berbagi solusi,
+        dan mengembangkan kariir bersama.
+      </h2>
+    </div>
+    <div class="border-b border-zinc-800 h-16">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
+  <section class="border-y flex border-zinc-800 relative" id="acara">
+    <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <div class="pl-12 pt-12 relative">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-xl whitespace-nowrap font-medium border bg-white border-zinc-800 px-4 py-2"
+          >
+            Jadwal Kegiatan
+          </h2>
+          <div class="h-px w-full bg-zinc-800"></div>
+        </div>
+      </div>
+      <div
+        class="border-x border-t border-zinc-800 p-8 flex flex-col relative mx-12 bg-white"
+      >
+        <h3 class="text-2xl font-medium">Saat ini belum ada kegiatan</h3>
+        <p class="mt-2 mb-6 text-lg text-zinc-600">
+          Kami sedang menyiapkan agenda berikutnya. Gabung komunitas untuk
+          mendapat update jadwal terbaru.
+        </p>
+        <button
+          class="h-12 hover:bg-laravel border border-laravel text-laravel transition-all hover:text-white text-left text-lg pl-6 pr-4 inline-flex items-center justify-between"
+        >
+          Gabung Komunitas
+          <IconArrowUpRight />
+        </button>
+      </div>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
+  <section class="border-y flex border-zinc-800 relative" id="pengurus">
+    <div class="inner border-x border-zinc-800 relative flex flex-col gap-6">
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <div class="pl-12 pt-12 relative">
+        <div class="flex items-center justify-between">
+          <h2
+            class="text-xl whitespace-nowrap font-medium border bg-white border-zinc-800 px-4 py-2"
+          >
+            Para Pengurus
+          </h2>
+          <div class="h-px w-full bg-zinc-800"></div>
+        </div>
+      </div>
+      <div class="mx-12 flex gap-4">
+        <div
+          class="border-x w-80 shrink-0 border-t p-6 border-zinc-800 flex flex-col relative bg-white"
+        >
+          Tim di balik layar yang mengalokasikan waktu dan keahlian secara
+          sukarela. Atas setiap jam yang dicurahkan untuk menyusun agenda,
+          menjawab pertanyaan, dan menjaga kualitas interaksi, kami ucapkan
+          terima kasih.
+        </div>
+        <div
+          class="border-x w-full border-t border-zinc-800 flex flex-col relative bg-white"
+        >
+          <div class="flex flex-col divide-y divide-zinc-800">
+            <div class="flex items-center gap-2 last:border-b border-zinc-800">
+              <img
+                class="size-14 border-r border-zinc-800"
+                src="https://github.com/dominosaurs.png"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="text-lg font-semibold">Adam Akbar</span>
+                <span class="text-sm">Inisiator</span>
+              </div>
+              <div class="flex gap-2 ml-auto pr-4">
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  <IconBrandGithub />
+                </a>
+                <a href="https://x.com/dominosaurs" target="_blank">
+                  <IconBrandX />
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 last:border-b border-zinc-800">
+              <img
+                class="size-14 border-r border-zinc-800"
+                src="https://github.com/kimmyxpow.png"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="text-lg font-semibold">pow</span>
+                <span class="text-sm">Insinyur Desain</span>
+              </div>
+              <div class="flex gap-2 ml-auto pr-4">
+                <a
+                  href="http://github.com/kimmyxpow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <IconBrandGithub />
+                </a>
+                <a href="https://x.com/kimmyxpow" target="_blank">
+                  <IconBrandX />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="border-y h-16 overflow-hidden">
+    <div class="inner border-x border-zinc-800">
+      <svg width="100%" height="100%" aria-hidden="true"
+        ><defs
+          ><pattern
+            viewBox="0 0 10 10"
+            width="8"
+            height="8"
+            patternUnits="userSpaceOnUse"
+            id="_r9R_g_"
+            ><line
+              x1="0"
+              y1="10"
+              x2="10"
+              y2="0"
+              stroke="currentColor"
+              vector-effect="non-scaling-stroke"
+              class="stroke-[hsl(0,0%,0%)] dark:stroke-[hsl(0,0%,30%)]"
+            ></line></pattern
+          ></defs
+        ><rect width="100%" height="100%" fill="url(#_r9R_g_)"></rect>
+      </svg>
+    </div>
+  </div>
+  <footer class="border-y flex border-zinc-800 relative overflow-hidden">
+    <div
+      class="inner bg-linear-to-b from-red-500 from-50% to-white to-0% border-x border-zinc-800 relative flex flex-col gap-6"
+    >
+      <div class="absolute inset-0">
+        <svg width="100%" height="100%" aria-hidden="true"
+          ><defs
+            ><pattern
+              viewBox="0 0 10 10"
+              width="10"
+              height="10"
+              patternUnits="userSpaceOnUse"
+              id="_r12R_6_"
+              ><circle
+                cx="5"
+                cy="5"
+                r="1"
+                fill="currentColor"
+                class="fill-zinc-500/50"></circle></pattern
+            ></defs
+          ><rect width="100%" height="100%" fill="url(#_r12R_6_)"></rect></svg
+        >
+      </div>
+      <svg
+        class="relative"
+        viewBox="0 0 1280 308"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M50.2753 0H0V308.689H144.713V263.27H50.2753V0Z"
+          fill="currentColor"></path>
+        <path
+          d="M322.209 130.973C315.796 120.684 306.688 112.602 294.883 106.718C283.081 100.84 271.201 97.8969 259.253 97.8969C243.798 97.8969 229.665 100.764 216.843 106.496C204.014 112.228 193.015 120.099 183.834 130.091C174.654 140.088 167.51 151.628 162.412 164.706C157.308 177.792 154.761 191.54 154.761 205.94C154.761 220.645 157.308 234.457 162.412 247.39C167.508 260.332 174.652 271.796 183.834 281.788C193.015 291.785 204.017 299.647 216.843 305.379C229.665 311.111 243.798 313.978 259.253 313.978C271.201 313.978 283.081 311.038 294.883 305.159C306.688 299.282 315.796 291.197 322.209 280.904V308.685H369.865V103.186H322.209V130.973ZM317.837 231.076C314.922 239.016 310.841 245.925 305.598 251.804C300.35 257.687 294.009 262.389 286.579 265.917C279.146 269.445 270.905 271.208 261.875 271.208C252.837 271.208 244.676 269.445 237.391 265.917C230.104 262.389 223.839 257.687 218.593 251.804C213.345 245.925 209.335 239.016 206.57 231.076C203.794 223.138 202.417 214.759 202.417 205.942C202.417 197.12 203.794 188.742 206.57 180.804C209.335 172.866 213.345 165.961 218.593 160.078C223.839 154.201 230.102 149.493 237.391 145.965C244.676 142.437 252.837 140.674 261.875 140.674C270.908 140.674 279.146 142.437 286.579 145.965C294.009 149.493 300.35 154.199 305.598 160.078C310.844 165.961 314.922 172.866 317.837 180.804C320.748 188.742 322.209 197.12 322.209 205.942C322.209 214.759 320.748 223.138 317.837 231.076Z"
+          fill="currentColor"></path>
+        <path
+          d="M709.568 130.973C703.155 120.684 694.047 112.602 682.242 106.718C670.44 100.84 658.56 97.8969 646.612 97.8969C631.157 97.8969 617.024 100.764 604.202 106.496C591.373 112.228 580.374 120.099 571.193 130.091C562.013 140.088 554.869 151.628 549.771 164.706C544.666 177.792 542.12 191.54 542.12 205.94C542.12 220.645 544.666 234.457 549.771 247.39C554.867 260.332 562.01 271.796 571.193 281.788C580.374 291.785 591.375 299.647 604.202 305.379C617.024 311.111 631.157 313.978 646.612 313.978C658.56 313.978 670.44 311.038 682.242 305.159C694.047 299.282 703.155 291.197 709.568 280.904V308.685H757.224V103.186H709.568V130.973ZM705.198 231.076C702.283 239.016 698.202 245.925 692.959 251.804C687.711 257.687 681.37 262.389 673.94 265.917C666.507 269.445 658.266 271.208 649.236 271.208C640.198 271.208 632.037 269.445 624.752 265.917C617.465 262.389 611.2 257.687 605.954 251.804C600.706 245.925 596.696 239.016 593.931 231.076C591.155 223.138 589.778 214.759 589.778 205.942C589.778 197.12 591.155 188.742 593.931 180.804C596.696 172.866 600.706 165.961 605.954 160.078C611.2 154.201 617.463 149.493 624.752 145.965C632.037 142.437 640.198 140.674 649.236 140.674C658.269 140.674 666.507 142.437 673.94 145.965C681.37 149.493 687.711 154.199 692.959 160.078C698.205 165.961 702.283 172.866 705.198 180.804C708.109 188.742 709.57 197.12 709.57 205.942C709.568 214.759 708.107 223.138 705.198 231.076Z"
+          fill="currentColor"></path>
+        <path
+          d="M1280 1.12315e-05H1232.35V308.689H1280V1.12315e-05Z"
+          fill="currentColor"></path>
+        <path
+          d="M407.466 308.689H455.117V150.486H536.876V103.192H407.466V308.689Z"
+          fill="currentColor"
+        >
+        </path>
+        <path
+          d="M948.281 103.192L888.386 260.557L828.489 103.192H780.224L858.441 308.689H918.331L996.546 103.192H948.281Z"
+          fill="currentColor"></path>
+        <path
+          d="M1100.48 97.908C1042.13 97.908 995.937 146.279 995.937 205.944C995.937 271.9 1040.64 313.98 1106.59 313.98C1143.5 313.98 1167.06 299.745 1195.85 268.746L1163.66 243.621C1163.64 243.646 1139.36 275.802 1103.1 275.802C1060.96 275.802 1043.22 241.533 1043.22 223.803H1201.32C1209.62 155.913 1165.37 97.908 1100.48 97.908ZM1043.35 188.085C1043.71 184.13 1049.2 136.086 1100.1 136.086C1151.01 136.086 1157.19 184.123 1157.55 188.085H1043.35Z"
+          fill="currentColor"></path>
+      </svg>
+    </div>
+  </footer>
+</Layout>
+
+<style>
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  .scroll-up {
+    animation: scrollUp 240s linear infinite;
+  }
+
+  .scroll-down {
+    animation: scrollDown 240s linear infinite;
+  }
+</style>
