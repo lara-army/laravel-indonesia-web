@@ -1,17 +1,85 @@
 ---
 import "../styles/global.css";
+
+const SITE_URL = "https://lara-army.github.io";
+const PAGE_TITLE =
+  "Komunitas Laravel Indonesia Discord | Belajar, Diskusi & Lowongan Kerja Laravel";
+const PAGE_DESCRIPTION =
+  "Bergabung dengan komunitas Laravel Indonesia terbesar di Discord. Belajar framework Laravel dari dasar, diskusi error solving, tips PHP, Vue.js, React, share lowongan kerja web developer, dan networking dengan 10.000+ developer Indonesia.";
+const KEYWORDS =
+  "Laravel Indonesia, Komunitas Laravel, Discord Laravel, Belajar Laravel, Tutorial Laravel, PHP Indonesia, Web Developer Indonesia, Lowongan Kerja Laravel, Framework PHP, Vue.js Indonesia, Full Stack Developer";
+const OG_IMAGE = "/og-image.jpg";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="id" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/og-image.jpg" />
+    <link rel="canonical" href={SITE_URL} />
+
     <meta name="generator" content={Astro.generator} />
-    <title>
-      Komunitas Laravel Indonesia Discord - Belajar, Diskusi & Lowongan Kerja
-    </title>
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+
+    <title>{PAGE_TITLE}</title>
+    <meta name="description" content={PAGE_DESCRIPTION} />
+    <meta name="keywords" content={KEYWORDS} />
+    <meta name="author" content="Laravel Indonesia Community" />
+    <meta name="theme-color" content="#FF2D20" />
+
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={PAGE_TITLE} />
+    <meta property="og:description" content={PAGE_DESCRIPTION} />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:site_name" content="Laravel Indonesia" />
+    <meta property="og:image" content={`${SITE_URL}${OG_IMAGE}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta
+      property="og:image:alt"
+      content="Laravel Indonesia Community - Komunitas Developer Laravel Terbesar di Indonesia"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={PAGE_TITLE} />
+    <meta name="twitter:description" content={PAGE_DESCRIPTION} />
+    <meta name="twitter:image" content={`${SITE_URL}${OG_IMAGE}`} />
+    <meta name="twitter:image:alt" content="Laravel Indonesia Community" />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Laravel Indonesia",
+        url: SITE_URL,
+        logo: `${SITE_URL}/logo.svg`,
+        description: PAGE_DESCRIPTION,
+        sameAs: [
+          "https://discord.gg/laravelindonesia",
+          "https://github.com/laravelindonesia",
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          contactType: "Community Support",
+          availableLanguage: "Indonesian",
+        },
+      })}
+    />
   </head>
   <body>
     <slot />
