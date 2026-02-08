@@ -22,8 +22,8 @@ const { data } = Astro.props;
   </div>
   <div class="flex gap-2 ml-auto pr-4">
     {
-      data.links.map(({ Icon, url }) => (
-        <a href={url} target="_blank" rel="noopener noreferrer">
+      data.links.map(({ Icon, url, label }) => (
+        <a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
           <Icon />
         </a>
       ))

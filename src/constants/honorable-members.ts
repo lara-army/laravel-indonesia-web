@@ -9,6 +9,7 @@ export interface HonorableMember {
   links: {
     Icon: JSX.Element,
     url: string,
+    label: string,
   }[]
 
 }
@@ -22,9 +23,11 @@ const honorableMembers: HonorableMember[] = [
       {
         Icon: IconBrandGithub,
         url: 'https://github.com/dominosaurs',
+        label: "dominos' GitHub",
       }, {
         Icon: IconBrandX,
         url: 'https://x.com/dominosaurs_',
+        label: "dominos' X",
       }
     ]
   }, {
@@ -32,12 +35,14 @@ const honorableMembers: HonorableMember[] = [
     avatarSrc: 'https://github.com/kimmyxpow.png',
     title: 'Insinyur Desain',
     links: [
-      {
+       {
         Icon: IconBrandGithub,
         url: 'http://github.com/kimmyxpow',
+        label: "pow's GitHub",
       }, {
         Icon: IconBrandX,
         url: 'https://x.com/kimmyxpow',
+        label: "pow's X",
       }
     ]
   }
