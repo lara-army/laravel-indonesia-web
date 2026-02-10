@@ -2,11 +2,18 @@
 
 ---
 
-<footer class="border-y flex border-border-dark relative overflow-hidden">
+<footer
+  data-scroll-trigger="footer"
+  class="border-y flex border-border-dark relative overflow-hidden"
+>
   <div
     class="inner bg-indonesia-white border-x border-border-dark relative flex flex-col gap-6"
   >
-    <div class="red-bg absolute top-0 left-0 right-0 h-1/2 bg-indonesia-red translate-y-[200%] will-change-transform"></div>
+    <div
+      data-animate="red-bg"
+      class="absolute top-0 left-0 right-0 h-1/2 bg-indonesia-red translate-y-[200%] will-change-transform"
+    >
+    </div>
     <div class="absolute inset-0">
       <svg width="100%" height="100%" aria-hidden="true"
         ><defs
@@ -65,12 +72,12 @@
 
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.to(".red-bg", {
+  gsap.to('[data-animate="red-bg"]', {
     y: 0,
     ease: "none",
     force3D: true,
     scrollTrigger: {
-      trigger: "footer",
+      trigger: '[data-scroll-trigger="footer"]',
       start: "top bottom",
       end: "bottom bottom",
       scrub: 0.5,
