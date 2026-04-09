@@ -29,15 +29,15 @@ const honorableMembers: HonorableMember[] = [
     ]
   }, {
     name: 'pow',
-    avatarSrc: 'https://github.com/kimmyxpow.png',
+    avatarSrc: 'https://github.com/powxenv.png',
     title: 'Insinyur Desain',
     links: [
       {
         Icon: IconBrandGithub,
-        url: 'http://github.com/kimmyxpow',
+        url: 'http://github.com/powxenv',
       }, {
         Icon: IconBrandX,
-        url: 'https://x.com/kimmyxpow',
+        url: 'https://x.com/powxenv',
       }
     ]
   }
